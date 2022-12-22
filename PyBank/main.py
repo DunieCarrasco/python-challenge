@@ -65,19 +65,13 @@ print (f"Total: ${total_profit}")
 print (f"Average Change: ${average_change}")
 print (f"Greatest Increase in Profits: {greatest_date} (${greatest_increase})")
 print (f"Greatest Decrease in Profits: {lowest_date} (${greatest_decrease})")
-output_file = os.path.join('/Users/danielcarrasco/Desktop/python-challenge/PyBank/Instructions/PyBank/Resources/budget_data.csv')
 
-
-
-
-
-# The total number of months included in the dataset
-
-# The net total amount of "Profit/Losses" over the entire period
-
-
-# The changes in "Profit/Losses" over the entire period, and then the average of those changes
-
-# The greatest increase in profits (date and amount) over the entire period
-
-# The greatest decrease in profits (date and amount) over the entire period
+with open("PyBank_result.txt", "w") as f:
+    f.write("\nFinancial Analysis")
+    f.write('\n----------------------------------------')
+    f.write(f"\nTotal Months: {total_months}")
+    f.write(f"\nTotal: ${total_profit}")
+    f.write(f"\nAverage Change: ${average_change}")
+    f.write(f"\nGreatest Increase in Profits: {greatest_date} (${greatest_increase})")
+    f.write(f"\nGreatest Decrease in Profits: {lowest_date} (${greatest_decrease})")
+    f.close()
