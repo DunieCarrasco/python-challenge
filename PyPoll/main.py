@@ -53,6 +53,7 @@ print(f"-----------------------------")
 print(f"Winner: {winning_candidate}")
 print(f"-----------------------------")
 
+# create text file with results
 with open("PyPoll_result.txt", "w") as f:
     f.write("\nElection Results")
     f.write(f"\n-----------------------------")

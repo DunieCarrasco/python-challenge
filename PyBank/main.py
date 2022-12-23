@@ -1,7 +1,8 @@
+# import modules
 import os
 import csv
 # file path
-budget_csv = os.path.join('/Users/danielcarrasco/Desktop/python-challenge/PyBank/Instructions/PyBank/Resources/budget_data.csv')
+budget_csv = os.path.join('/Users/danielcarrasco/Desktop/python-challenge/PyBank/Resources/budget_data.csv')
 # set up variables
 total_months = 0
 total_profit = 0
@@ -66,6 +67,7 @@ print (f"Average Change: ${average_change}")
 print (f"Greatest Increase in Profits: {greatest_date} (${greatest_increase})")
 print (f"Greatest Decrease in Profits: {lowest_date} (${greatest_decrease})")
 
+# create text file with results
 with open("PyBank_result.txt", "w") as f:
     f.write("\nFinancial Analysis")
     f.write('\n----------------------------------------')
