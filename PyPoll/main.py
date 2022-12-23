@@ -52,3 +52,15 @@ for i in range(len(candidates)):
 print(f"-----------------------------")
 print(f"Winner: {winning_candidate}")
 print(f"-----------------------------")
+
+with open("PyPoll_result.txt", "w") as f:
+    f.write("\nElection Results")
+    f.write(f"\n-----------------------------")
+    f.write(f"\nTotal Vote: {total_vote}")
+    f.write(f"\n-----------------------------")
+    for i in range(len(candidates)):
+        f.write(f"\n{candidates[i]}: {str(percent_votes[i])}% ({str(number_votes[i])})")
+    f.write(f"\n-----------------------------")
+    f.write(f"\nWinner: {winning_candidate}")
+    f.write(f"\n-----------------------------")
+    f.close()
